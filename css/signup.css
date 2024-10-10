@@ -1,0 +1,72 @@
+body{
+    background-color : #808080;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center; /* hey it works */
+        align-items: center;
+        height: 100vh; 
+    }
+    .container {
+       max-width : 400px;
+        margin : 20px auto;
+        bottom : 40%;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color : #C0C0C0;
+        border-top-color :white;
+        border-left-color : white;
+      }
+
+
+
+   input[type="email"],
+   input[type="text"],
+   input[type="password"]
+   {
+display:block;
+margin : 10px;
+width: 80%;
+background-color: #929292;
+font-weight : bold;
+color : white;
+border : 1px solid black;
+box-sizing: border-box;
+ }
+
+   input::placeholder{
+    font-weight : lighter;
+   }
+
+input[type = "submit"],
+input[type= "reset"]{
+
+border-top-color : white; 
+border-left-color : white;
+ background-color : #C0C0C0;
+
+}
+.buttons{
+    display : flex;
+    align-items : baseline;
+    flex-wrap : wrap;
+    }
+    
+    .buttons input{
+        margin : 3px; 
+    }
+    .logo{
+        position: absolute;
+       top:-5%;
+        max-width: 300px; 
+        height: auto; 
+        margin-bottom: 20px;
+    }
+    .header{
+    display : flex;
+      margin-bottom :50px;
+      justify-content: center;
+      margin-right: 10px;
+      }
+
+    

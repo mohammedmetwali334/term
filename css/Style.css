@@ -1,0 +1,63 @@
+body{
+background-color : #808080;
+}
+.wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+.container {
+   max-width : 400px;
+    margin : 20px auto;
+    bottom : 40%;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color : #C0C0C0;
+    border-top-color :white;
+    border-left-color : white;
+   
+  }
+  
+    
+input[type = "submit"],
+input[type= "reset"]{
+border-top-color : white; 
+border-left-color : white;
+ background-color : #C0C0C0;
+
+}
+
+  input[type="email"],
+  input[type="password"]{
+    display: block;
+    margin: 10px;
+    width : 80%;
+    background-color: #929292;
+    color : rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.buttons{
+  display : block;
+  flex-wrap : wrap;
+  }
+  .buttons input{
+    margin : 3px; /*this sucks*/
+  }
+
+
+  .logo{
+    position: absolute;
+   top:-5%;
+    max-width: 300px; 
+    height: auto; 
+    margin-bottom: 20px;
+}
+/* .card {
+ left:80%;
+ bottom:35%;
+  max-width: 500px;
+  position: absolute;
+  background-color: #ffffff; /
+} */
