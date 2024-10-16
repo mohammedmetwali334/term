@@ -11,7 +11,7 @@
 </head>
   <body>
   <form action="Index.php" method="post">
-  <img class="img-fluid logo" src ="9lives.png">
+  <img class="img-fluid logo" src ="img/9lives.png">
 
   <div class = "wrapper">
     <div class="container mt-5">

@@ -1,6 +1,8 @@
 body{
-background-color : #808080;
-}
+  background-color : rgb(133, 163, 200);
+  background-image : url("../img/ps.png");
+
+  }
 .wrapper {
     display: flex;
     justify-content: center; 
@@ -16,9 +18,9 @@ background-color : #808080;
     background-color : #C0C0C0;
     border-top-color :white;
     border-left-color : white;
-   
-  }
-  
+    box-shadow: rgba(0, 0, 0, 0.15) 7px 6px 3.6px;}
+
+ 
     
 input[type = "submit"],
 input[type= "reset"]{
@@ -48,16 +50,18 @@ border-left-color : white;
 
 
   .logo{
-    position: absolute;
+    position: fixed;
    top:-5%;
     max-width: 300px; 
     height: auto; 
     margin-bottom: 20px;
 }
-/* .card {
- left:80%;
- bottom:35%;
-  max-width: 500px;
-  position: absolute;
-  background-color: #ffffff; /
-} */
+
+@media (max-width:767px){
+  .logo {
+     display: block;
+     width: 230px;
+     max-width: 100%;
+     margin-left: 80px;
+
+  }}

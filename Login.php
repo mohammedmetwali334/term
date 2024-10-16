@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-<img class="img-fluid logo" src ="9lives.png">
+<img class="img-fluid logo" src ="img/9lives.png">
 
 <div class = "wrapper">
     <div class="container mt-5">

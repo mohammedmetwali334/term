@@ -13,6 +13,10 @@
     <a href = "Login.php">Login</a>
     <br>
     <a href = "Register.php">Signup</a>
+    <br>
+    <a href = "Student.php">Student</a>
+    <br><a href = "Manager.php">Manager</a>
+    <br><a href = "Admin.php">Admin</a>
     </div>
 </body>
 </html>

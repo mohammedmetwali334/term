@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body{
+background-image : url("../img/ps.png") 
+    }
+
+.navbar{
+    background-color: #b3b3b3;
+    border: solid 1px rgb(212, 212, 212);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+
+#navbar-logo {
+    max-width: 100px; 
+    height: auto;     
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .nav-link{ 
+    border : solid 1.5px black;    
+    background-color : #84a2c9;      
+    width : 200px;     
+    color : white;
+    font-family : bold;
+    text-align : center;
+    font-family: 'Roboto';
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .website_name{
+    font-family: "Roboto";
+    font-weight : bold;
+    margin : 10px;
+    font-size : 20px;
+  }
+
+
+footer{ 
+  background-color: #b3b3b3;
+    border: solid 1px rgb(212, 212, 212);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  position : fixed;
+  width : 50%; 
+   left : 25%;
+  bottom : .5%;
+  border : solid 1px black;
+  display : flex;
+  align-content: center;
+  justify-content : center;
+  }
+  .footerwrapper{
+   display : flex;
+   max-width : 100px;
+  }
+.stuff{
+margin : 20px;
+}
+  #footer-logo{
+  max-width : 100px;
+  height: auto;     
+  display: inline-block;
+  vertical-align: middle;
+}
+.icons{
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}

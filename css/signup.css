@@ -1,6 +1,7 @@
 body{
-    background-color : #808080;
+    background-image : url("../img/ps.png");
     }
+    
     .wrapper {
         display: flex;
         justify-content: center; /* hey it works */
@@ -16,7 +17,7 @@ body{
         background-color : #C0C0C0;
         border-top-color :white;
         border-left-color : white;
-      }
+        box-shadow: rgba(0, 0, 0, 0.15) 7px 6px 3.6px;}
 
 
 
@@ -70,3 +71,11 @@ border-left-color : white;
       }
 
     
+      @media (max-width:767px){
+        .logo {
+           display: block;
+           width: 230px;
+           max-width: 100%;
+           margin-left: 80px;
+      
+        }}
