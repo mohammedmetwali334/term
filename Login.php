@@ -1,6 +1,45 @@
 <?php
+include 'Connect.php';
+session_start();
 
-?>
+if(isset($_POST["send"])) {
+$email = $_POST["email"];
+$password = $_POST["password"];
+
+$sql = "SELECT * FROM users where email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) == 1){
+        $row = mysqli_fetch_assoc($result);
+        $hashed_password = $row["password"];
+        if (password_verify( $password, $hashed_password)){
+            $_SESSION["user_id"] = $row["user_id"];
+            $_SESSION["email"] = $row["email"];
+            $_SESSION["role"] = $row["role"];
+            $_SESSION["loggedin"] = true;
+            if ($row["role"] == 'Student'){
+                header("Location: Student/Student.php");   
+            }
+            else if($row["role"] == 'manager'){
+                header("Location: Manager/Manager.php");   
+            }
+            
+        }
+        else{
+            $error = "Password Incorrect";
+            header("Location: Login.php?error=$error");
+            exit();
+        }
+    }
+    else{
+        $error = "Invalid Email";
+        header("Location: Login.php?error=$error");
+        exit();
+    }
+
+}
+
+?>   
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,11 +50,17 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-<img class="img-fluid logo" src ="img/9lives.png">
+<img class="img-fluid logo mx-auto d-block mb-4" src ="img/9lives.png">
 
 <div class = "wrapper">
+<?php 
+ if (isset($_GET['error'])) {
+    $msg = $_GET['error'];
+    echo "<script>alert('$msg');</script>"; // Display the error message in an alert box
+}
+    ?>
     <div class="container mt-5">
-    <form action="Index.php" method="post">  
+    <form action="Login.php" method="post">  
         <h1 class = "header">LOGIN</h1>  
         <hr>
             <div class="mb-3"> <!--could just use css but I need to use bootstrap somewhere?-->
@@ -28,7 +73,7 @@
             </div>
             <div class="buttons mt-4 mb-3" ><!-- sharp edges look better -->
                 <input type="reset" value="Reset">
-                <input type="submit" value="LOGIN">
+                <input type="submit" value="Login" name = "send">
         </form>
         </div>
         <p>Don't have an account? <a href = "Register.php">Signup</a></p>

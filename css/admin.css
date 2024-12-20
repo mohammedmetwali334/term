@@ -34,17 +34,23 @@ background-image : url("../img/ps.png")
     font-size : 20px;
   }
 
+.tbd, th, td{
+  border-collapse : collapse;
+  border : 1px black solid;
 
+}
 footer{ 
   background-color: #b3b3b3;
     border: solid 1px rgb(212, 212, 212);
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  position : fixed;
-  width : 50%; 
-   left : 25%;
-  bottom : .5%;
+    position: fixed;
+    width : 50%; 
+    left : 25%;
+   bottom : .5%;
   border : solid 1px black;
-  }
+   display : flex;
+    align-content: center;
+}
   .footerwrapper{
    display : flex;
    max-width : 100px;
@@ -52,16 +58,16 @@ footer{
 .stuff{
 margin : 20px;
 }
-  #footer-logo{
+#footer-logo{
   max-width : 100px;
   height: auto;     
   display: inline-block;
   vertical-align: middle;
 }
 .icons{
-display: inline-flex;
-margin-left : 200px;
-font-size : 30px;
-gap : 8px;
-align-items: center;
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
 }
